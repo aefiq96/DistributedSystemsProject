@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/generateSchema"
+	xmlns:tns="http://www.example.org/generateSchema"
+	elementFormDefault="qualified">
+
+	<element name="order">
+		<complexType>
+			<sequence>
+				<element name="orderID" type="int"></element>
+				<element name="Date" type="date"></element>
+				<element name="car" type="int"></element>
+				<element name="cust" type="int"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="customer">
+		<complexType>
+			<sequence>
+				<element name="CustID" type="int"></element>
+				<element name="Fname" type="date"></element>
+				<element name="lName" type="int"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="car">
+		<complexType>
+			<sequence>
+				<element name="carID" type="int"></element>
+				<element name="CarBrand" type="date"></element>
+				<element name="CarModel" type="int"></element>
+				<element name="cust" type="int"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>
